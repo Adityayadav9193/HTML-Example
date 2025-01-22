@@ -1,77 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
- <title>LIST </title>
- <body bgcolor="lavender">
-	
-	
-	 
-	 
-	  
-      <header> <b>LAB2 </b> </header>
-	  <h1> ORDERED list</h1>
-	   <h2> List of stadium of cricket in world  </h2>
-	   <ol>
-	   <li> MCG staudium ,Sydney</li>
-	   <li> Vakhede </li>
-	   <li> Netaji stadium</li>
-	   </ol>
-	   <header> <b>List of food items</b> </header>
-	   
-	   <ul>
-	   <li> Beetroot</li>
-	   <li> Ginger</li>
-	   <li> onion</li>
-	   </ul>
-	   
-	   <form action="/test.php" method="get">
-		
-			FIRST NAME: <input type="text" name="first_name"/>
-			<br>
-			LAST  NAME: <input type="text" name = "Last_name"/>
-			<br>
-			
-			USERID: <input type="text" name= "user_id"/>
-			<br>
-			PASSWORD: <input type="password" name="password"/>
-			<br>
-			
-			DESCRIPTION : <br/>
-					<textarea rows ="5" cols="50" name= "description">
-Enter the description....
-						
-						</textarea>
-						<br>
-						<p><b><big> Select your registered courses</big></b></p>
-				<input type ="checkbox" name ="maths" value= "on">Maths		
-				<input type="checkbox" name ="physics"value ="on">Physics
-				<input type="checkbox" name ="Chemistry"value ="on">Chemistry
-	<br>
-	
-	<p><b><big> Select your unique Dream Company</b></big></p>
-	<input type="radio"name="Company" value="Meta">Meta
-	<input type="radio"name="Company" value="Adobe">Adobe
-	<input type="radio"name="Company" value="Amazon">Amazon
-	<input type="radio"name="Company" value="Netflix">Netflix
-	<input type="radio"name="Company" value="Google">Google
-	
-	<br>
-	<p><b><big> Mention your country in which you want to Work</b></big></p>
-	
-	<select multiple>
-		<option value ="China" selected>China</option>
-		<option value ="India" selected>India</option>
-		<option value ="Austalia" selected>Austalia</option>
-		<option value ="USA" selected>USA</option>
-		<option value ="New Zealand" selected>New Zealand</option>
-		<option value ="Singapore" selected>Singapore</option>
-	
-	
-	
-				
+    <header><b>LAB2</b></header>
+    <h1>ORDERED List</h1>
+    <h2>List of Stadiums of Cricket in the World</h2>
+    
+    <ol>
+        <li>MCG Stadium, Sydney</li>
+        <li>Wankhede</li>
+        <li>Netaji Stadium</li>
+    </ol>
 
-	</form>
-			
-			
-	   
-	   </html>
+    <header><b>List of Food Items</b></header>
+    <ul>
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Onion</li>
+    </ul>
+
+    <form action="/test.php" method="get">
+        <label for="first_name">FIRST NAME: </label>
+        <input type="text" id="first_name" name="first_name"/>
+        <br>
+        
+        <label for="last_name">LAST NAME: </label>
+        <input type="text" id="last_name" name="last_name"/>
+        <br>
+        
+        <label for="user_id">USERID: </label>
+        <input type="text" id="user_id" name="user_id"/>
+        <br>
+        
+        <label for="password">PASSWORD: </label>
+        <input type="password" id="password" name="password"/>
+        <br>
+
+        <label for="description">DESCRIPTION: </label><br/>
+        <textarea id="description" rows="5" cols="50" name="description">Enter the description....</textarea>
+        <br>
+
+        <p><b><big>Select Your Registered Courses</big></b></p>
+        <input type="checkbox" name="maths" value="on">Maths
+        <input type="checkbox" name="physics" value="on">Physics
+        <input type="checkbox" name="chemistry" value="on">Chemistry
+        <br>
+        
+        <p><b><big>Select Your Unique Dream Company</b></big></p>
+        <input type="radio" name="company" value="Meta">Meta
+        <input type="radio" name="company" value="Adobe">Adobe
+        <input type="radio" name="company" value="Amazon">Amazon
+        <input type="radio" name="company" value="Netflix">Netflix
+        <input type="radio" name="company" value="Google">Google
+        <br>
+
+        <p><b><big>Mention Your Country in Which You Want to Work</b></big></p>
+        <select multiple>
+            <option value="China" selected>China</option>
+            <option value="India" selected>India</option>
+            <option value="Australia" selected>Australia</option>
+            <option value="USA" selected>USA</option>
+            <option value="New Zealand" selected>New Zealand</option>
+            <option value="Singapore" selected>Singapore</option>
+        </select>
+    </form>
+
+</body>
+</html>
